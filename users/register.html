@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Footer.css">
+</head>
+<style>
+h1{
+font-size:4em;
+}
+h2{
+font-size:3em;
+}
+body{
+ background: url(assets/img/header.jpg)fixed;
+ 
+  -webkit-background-size:cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:cover;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:black;
+   color: gray;
+   text-align: center;
+}
+</style>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#"><font color="white">Blood Bank</font><br></a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav">
+				 <li class="active"><a href="../homepage.html"><font color="white"><b>Home</b></font></a></li>
+                    </ul><div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav navbar-right">
+                       
+						
+                    </ul>
+
+					
+
+            </div>
+            </div>
+        </div>
+    </nav>
+	<br><br><br><br><br>
+	<div class="container">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        
+       
+        
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                
+                             
+            </div>
+            <div class="panel-body">
+                <form method="post" action="functions.php" class="form-horizontal">
+                     <div class="form-group">
+                        <label class="col-md-4 form-label">Name</label>
+                        <div class="col-md-4">
+                            <input type="text" name="name" class="form-control"  required="true">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label col-md-4">Email</label>
+                        <div class="col-md-8">
+                            <input type="email" required="true" class="form-control" name="Email" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label col-md-4">DateOfBirth</label>
+                        <div class="col-md-8">
+                            <input type="date" required="true" class="form-control" name="DOB" >
+                        </div>
+                    </div>
+					 <div class="form-group">
+                        <label class="form-label col-md-4">Age</label>
+                        <div class="col-md-8">
+                            <input type="number" required="true" class="form-control" name="Age" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label col-md-4">Gender</label>
+                        <div class="col-md-8">
+                            <input type="radio" value="Male" checked="true" class="radio-inline" name="Gender" >Male
+                            <input type="radio" value="Female" class="radio-inline" name="Gender" >Female
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label col-md-4">Blood Group</label>
+                        <div class="col-md-8">
+                            <select name="Bloodgroup" class="form-control">
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label col-md-4">Address</label>
+                        <div class="col-md-8">
+                            <textarea required="true" minlength="3" class="form-control" name="Address" 
+                                      rows="3" placeholder="Please fill out your complete address."></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label col-md-4">City</label>
+                        <div class="col-md-8">
+                            <input type="text" required="true" class="form-control" name="City" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label col-md-4">Mobile</label>
+                        <div class="col-md-8">
+                            <input type="number" required="true" class="form-control" name="Mobileno" >
+                        </div></div>
+						<div class="form-group">
+                        <label class="form-label col-md-4">Username</label>
+                        <div class="col-md-8">
+                            <input type="text" required="true" class="form-control" name="Username" >
+                        </div></div>
+						<div class="form-group">
+                        <label class="form-label col-md-4">Password</label>
+                        <div class="col-md-8">
+                            <input type="password" required="true" class="form-control" name="Password" >
+                        </div></div>
+						<div class="form-group">
+                        <label class="form-label col-md-4">Confirmpassword</label>
+                        <div class="col-md-8">
+                            <input type="password" required="true" class="form-control" name="Confirmpassword" >
+                        </div></div>
+						
+                    <div class="form-group">
+                        <label class="form-label col-md-4"></label>
+                        <div class="col-md-8">
+                        <button class="btn btn-success" name="submitBtn" >Register</button>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+     <div class="col-md-12"><center>
+            <label><br><br>Copyright © 2018 </label></center>
+        </div><br>
+    </footer>	   
+</body>
+
+</html>

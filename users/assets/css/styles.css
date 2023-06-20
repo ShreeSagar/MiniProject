@@ -1,0 +1,29 @@
+p{
+  margin:0 0 10px;
+}
+
+@media (min-width:768px) {
+  .navbar-nav > li{
+    float:left;
+  }
+}
+
+body{
+  font-family:"Lucida Handwriting,Georgia;
+  font-size:16px;
+  line-height:1.42857143;
+  color:#333;
+  background-color:white;
+}
+
+a{
+  color:#337ab7;
+  text-decoration:none;
+}
+
+.carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img{
+  display:block;
+  width:100%;
+  height:450px;
+}
+

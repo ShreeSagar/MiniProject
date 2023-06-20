@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Footer.css">
+</head>
+<style>
+h1{
+font-size:4em;
+}
+h2{
+font-size:3em;
+}
+body{
+ background: url(assets/img/header.jpg)fixed;
+  -webkit-background-size:cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:cover;
+}
+#select {
+   width: 260px;
+   }
+</style>
+   <script language="JavaScript" type="text/javascript">
+  var adv='<? echo $_POST['Bloodgroup'] ?>';
+  for(k=0;k<document.form1.Bloodgroup.options.length;k++)
+  {
+    if(document.form1.Bloodroup.options[k].value==adv)
+    {
+        document.form1.Bloodgroup.options[k].selected=true;
+    }
+  }
+ </script>
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#"><font color="white">Blood Bank</font><br></a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav">
+				<li role="presentation"><a  data-toggle="modal" data-target="#myModal" href="../Miniproject/homepage.html"><font color="white">Home</font></a></li>
+                    </ul><div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        
+                    </ul>
+
+					
+
+  </div>
+  </div>
+  </div>
+</nav><br><br><br><br><br><br><br><br><br><br><br><br>
+<center>
+<div class="container" id="select">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <form id="form1" name="form1" method="post" action="bloodavailability.php">
+                <label class="form-label"><font color="white">Select Blood Group:</font> </label><br><br>
+                <select name="Bloodgroup" class="form-control" id="Bloodgroup">
+				    <option>Select</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select><br><br>
+                <button type="submit" class="btn btn-success" name="searchBtn">Check Availability</button>
+            </form>
+            <br>
+            <div class="form-group">
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>
+</center>
+<br><br><br><br><br>
+<footer>
+     <div class="col-md-12"><center>
+            <label><br><br>Copyright © 2018 </label></center>
+        </div><br>
+    </footer>
+</body>
+</html>
+

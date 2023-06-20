@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Footer.css">
+</head>
+<style>
+h1{
+font-size:4em;
+}
+h2{
+font-size:3em;
+}
+body{
+ background: url(assets/img/header.jpg)fixed;
+  -webkit-background-size:cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:cover;
+}
+</style>
+<body>
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#"><font color="white">Blood Bank</font><br></a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav">
+				<li role="presentation"><a href="../admin/adminhome.html"> <font color="white">Home</font></a></li>
+                    </ul><div class="collapse navbar-collapse" id="navcol-1">
+                  <ul class="nav navbar-nav navbar-right">
+						<li role="presentation"><a href="../admin/logout.php"><font color="white"><span class="glyphicon glyphicon-log-out"></span>Logout</font></a></li>
+						
+                    </ul>  
+
+					
+
+  </div>
+  </div>
+  </div>
+</nav><br><br><br><br><br><br><br>
+<div class="container">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+	<div class="panel panel-default">
+            <div class="panel-heading"></div>
+			                            <div class="form-group row">
+			                    		<label class="col-sm-3 col-form-label" for="form-username">CampId</label>
+										<div class="col-sm-5">
+			                        	<input type="text" name="Id" placeholder="CampId" class="form-password form-control" id="password1">
+			                        </div></div>
+                                         <div class="form-group row">
+			                    		<label class="col-sm-3 col-form-label" for="form-username">CampName</label>
+										<div class="col-sm-5">
+			                        	<input type="text" name="Name" placeholder="CampName" class="form-password form-control" id="password1">
+			                        </div>
+									</div>
+									 <div class="form-group row">
+			                    		<label class="col-sm-3 col-form-label" for="form-username">OrganisedBy</label>
+										<div class="col-sm-5">
+			                        	<input type="text" name="Organisation" placeholder="Organisedby" class="form-username form-control" id="email1" auto>
+			                        </div>
+									</div>
+									<div class="form-group row">
+			                    		<label class="col-sm-3 col-form-label" for="form-username">State</label>
+										<div class="col-sm-5">
+			                        	<input type="text" name="State" placeholder="State" class="form-password form-control" id="password1">
+			                        </div>
+									</div>
+									 <div class="form-group row">
+			                    		<label class="col-sm-3 col-form-label" for="form-username">City</label>
+										<div class="col-sm-5">
+			                        	<input type="text" name="City" placeholder="City" class="form-username form-control" id="email1" auto>
+			                        </div>
+									</div>
+									<div class="form-group row">
+			                    		<label class="col-sm-3 col-form-label" for="form-username">Details</label>
+										<div class="col-sm-5">
+			                        	<textarea name="Details" placeholder="Details" class="form-password form-control" id="password1"></textarea>
+			                        </div>
+									</div>
+									
+       
+		                 
+									<div class="form-group row" >
+									<div class="col-md-5"><center>
+                           <a href="../admin/addcamp.php"><button class="btn btn-success" name="submitBtn" >Add</button></a>
+							<a href="../admin/viewcamp.php"><button class="btn btn-success" name="submitBtn" >View</button>
+							<input type="reset" class="btn btn-success" value="Cancel" ></center>
+                       </div></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3"></div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<footer>
+     <div class="col-md-12"><center>
+            <label><br><br>Copyright © 2018 </label></center>
+        </div><br>
+    </footer>
+</body>
+</html>
